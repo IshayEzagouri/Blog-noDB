@@ -1,0 +1,21 @@
+<%- include('./partials/header.ejs') %>
+
+    <% if (locals.post) %>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md6">
+                    <h1 class="text-center">
+                        <%= post.title %>
+                    </h1>
+                    <br>
+                    <h5 class="m-0 text-center"> By <%= post.name %>
+                    </h5>
+                </div>
+                <div class="col-md6">
+                    <p>
+                        <%= post.content %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/footer.ejs') %>
